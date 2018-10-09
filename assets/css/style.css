@@ -1,6 +1,4 @@
-html {
-    margin: 0px;
-}
+
 
 h1 {
     margin: 15px 15px 15px 15px;
@@ -11,7 +9,7 @@ h1 {
 }
 
 body {
-    margin: 0px;
+   
     /* IMPORTANT you are in the CSS folder when the CSS is loaded.  You have to go back to the root directory to access the images folder */
     background-image: url("../images/dust_scratches.png");
 }
@@ -26,7 +24,7 @@ hr {
 
 p {
     color: #777777;
-    padding: 0px 0px 0px 0px;
+  
 }
 
 img {
@@ -95,32 +93,49 @@ footer {
     left: 50%;
 }
 
+a:link {
+    text-decoration: none;
+    color: #4aaaa5;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #4aaaa5;
+}
+
+a:hover {
+    color: #4aaaa5;
+}
+
+a:active {
+    color: #4aaaa5;
+}
+
 .panellefttop {
     background-color: #4aaaa5;
     float: left;
-    height: 50px;
+    height: 100%;
+    width: 400px;
     text-align: left;
     color: #ffffff;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
 }
 
-.paneltop {
+.panelrighttop {
     background-color: #ffffff;
-    height: 50px;
-}
-
-.container {
-    width: 960px;
-    padding: 0px 0px 50px 0px;
+    float: left;
+    height: 100%;
+    width: 100%;
+    padding: 5px 0px 0px 0px;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
 }
 
 .card {
     margin: 30px 0px 0px 0px;
-}
-
-
-.navbar {
-    height: 50px;
-    background-color: #ffffff;
 }
 
 .clearfix::after {
@@ -166,3 +181,15 @@ footer {
     padding: 0px 0px 10px 0px;
     color: #4aaaa5;
 }
+
+/*
+  These rules take effect when the browser's width
+  is either 992px or more.  Force the width to 960px when the screen can 
+  handle 960px or higher.
+*/
+@media screen and (min-width: 960px) {
+
+    .container-fluid {
+        width: 960px;
+    }
+  }
